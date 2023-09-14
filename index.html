@@ -60,7 +60,66 @@
 			display: inline-block;
 			
 		}
+		
+		.slider-frame{
+		overflow: hidden;
+		width: 800px;
+		margin-left: 400px;
+		margin-top: 20px;
+		height: 700px;
+		margin-left: 360px;
+		margin-top: 20px;
 
+	}
+	#j{
+		width: 800px;
+		border-radius: 5px;
+	}
+	#k{
+		width: 800px;
+		border-radius: 5px;
+	}
+	#l{
+		width: 800px;
+		border-radius: 5px;
+	}
+
+	@-webkit-keyframes slide_animation{
+		0% {left:0px;}
+		10% {left:0px;}
+		20% {left:800px;}
+		30% {left:800px;}
+		40% {left:1600px;}
+		50% {left:1600px;}
+		60% {left:800px;}
+		70% {left:800px;}
+		80% {left:0px;}	
+		90% {left:0px;}
+		100% {left:0px;}
+		
+	}
+	.slide-images{
+		width: 800px;
+		margin: 0 0 0 -800px;
+		position: relative;
+		-webkit-animation-name: slide_animation;
+		-webkit-animation-duration: 20s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-direction: alternate;
+		-webkit-animation-play-state: running;
+	}
+	.image-container{
+		width: 900px;
+		position: relative;
+		float: left;
+		height: 800px;
+	}
+	.fit-screen{
+		height: 100dvh;
+		
+	}	
+	</style>
+	<link rel="stylesheet" type="text/css" href="http://kit.fontawesome.com/a076d05399">
 	</style>
 </head>
 <body id="main-body">
